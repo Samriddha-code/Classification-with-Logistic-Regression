@@ -31,13 +31,6 @@ Here, exp(-z) means "e" (Euler's number) raised to the power of negative z, wher
 
 This function "squashes" any real number to a value between 0 and 1, which represents the probability that the input belongs to the positive class.
 
-## How to Use  
-1. Load and preprocess data.  
-2. Split and scale features.  
-3. Train model.  
-4. Perform threshold tuning and evaluate metrics.  
-5. Visualize results with precision-recall curves and ROC curve.
-
 ## Tools  
 Python, Pandas, NumPy, Scikit-learn, Matplotlib
 
