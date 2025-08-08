@@ -19,13 +19,17 @@ This project uses logistic regression to classify breast tumors as malignant or 
 - Selected threshold 0.4 improved recall to ~95.2% while keeping precision ~97.6%.  
 - This reduces missed malignant cases, important for medical diagnosis.
 
-## Sigmoid Function  
-- Logistic regression outputs probabilities using the sigmoid function:  
-  $$
-  \sigma(z) = \frac{1}{1 + e^{-z}}
-  $$  
-- The sigmoid converts linear outputs to probabilities between 0 and 1.  
-- Thresholding these probabilities yields final class predictions, allowing tuning based on the problem’s needs.
+## Sigmoid Function
+
+Logistic Regression uses the sigmoid function to convert the model's output into a probability between 0 and 1.
+
+The sigmoid function, denoted σ(z), is calculated as:
+
+sigma(z) = 1 / (1 + exp(-z))
+
+Here, exp(-z) means "e" (Euler's number) raised to the power of negative z, where z is the weighted sum of input features.
+
+This function "squashes" any real number to a value between 0 and 1, which represents the probability that the input belongs to the positive class.
 
 ## How to Use  
 1. Load and preprocess data.  
